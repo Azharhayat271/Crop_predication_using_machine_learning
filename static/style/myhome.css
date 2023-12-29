@@ -1,0 +1,24 @@
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+
+  body {
+    background-image: url(one.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .bgdiv{
+    background: url(uet.png);
+  }
+
+

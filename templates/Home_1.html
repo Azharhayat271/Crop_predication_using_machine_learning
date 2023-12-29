@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Crop Prediction Website</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link
+      rel="stylesheet"
+      href="{{url_for('static',filename='style/myhome.css')}}"
+    />
+    <style>
+      .jumbotron {
+        background-color: rgba(255, 255, 255, 0.8);
+      }
+
+      .content {
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">
+        <i class="fas fa-seedling"></i>
+
+        Crop Prediction Using Machine Learning
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"> <i class="fas fa-home"></i> Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-info-circle"></i> About
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-leaf"></i> Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fas fa-user"></i> Profile
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Side-by-Side Display - English on Left, Urdu on Right -->
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <div class="row">
+          <!-- English Content - LTR -->
+          <div class="col-md-6">
+            <h1 class="display-4">Revolutionizing Agriculture</h1>
+            <p class="lead">
+              Empowering farmers with data-driven insights for sustainable and
+              profitable agriculture.
+            </p>
+            <p>
+              <i class="fas fa-check-circle"></i> Accurate Crop Predictions<br />
+              <i class="fas fa-check-circle"></i> Smart Farming Solutions<br />
+              <i class="fas fa-check-circle"></i> Soil Analytics<br />
+            </p>
+            <form action="/Predict">
+              <input
+                type="submit"
+                id="Predict"
+                name="Predict"
+                value="Predict"
+                class="btn btn-success btn-lg"
+              />
+            </form>
+          </div>
+          <!-- Urdu Content - RTL -->
+          <div class="col-md-6" dir="rtl">
+            <h1 class="display-4">زرعی انقلاب</h1>
+            <p class="lead">
+              فارمرز کو ڈیٹا چلایا گیا تجزیے کے ذریعے مضبوط اور منافع بخش کھیتی
+              کے لیے مختصر کرنا۔
+            </p>
+            <br />
+            <p>
+              <i class="fas fa-check-circle"></i> درست کرپ پریڈکشنز<br />
+              <i class="fas fa-check-circle"></i> انٹیلیجنٹ فارمنگ حلولات<br />
+              <i class="fas fa-check-circle"></i> مٹی اینالیٹکس<br />
+            </p>
+            <form action="/Predict">
+              <input
+                type="submit"
+                id="Predict"
+                name="Predict"
+                value="شروع ہو جائیں"
+                class="btn btn-success btn-lg"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
